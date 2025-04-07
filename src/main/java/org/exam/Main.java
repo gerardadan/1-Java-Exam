@@ -11,13 +11,13 @@ public class Main {
         Car suv = new SuvCar("Seat", "Ibiza", FuelType.diesel, new Date("2015/11/01"), DriveType.ForxFor);
         Car sedan = new SedanCar("Seat", "Ibiza", FuelType.diesel, new Date("2020/11/01"), 350);
 
-        List<Car> cars = new ArrayList<>();
-        cars.add(sportCar);
-        cars.add(suv);
-        cars.add(sedan);
+        List<Vehicle> vehicles = new ArrayList<>();
+        vehicles.add(sportCar);
+        vehicles.add(suv);
+        vehicles.add(sedan);
 
-        Report report = new Report(cars);
+        Report report = new Report(vehicles);
         report.showCars();
-        List<Car> carsFiltered = report.filterCarByManufactureDate(cars, new Date("2012/01/01"));
+        List<Car> carsFiltered = report.filterCarByManufactureDate(vehicles, new Date("2012/01/01"));
     }
 }

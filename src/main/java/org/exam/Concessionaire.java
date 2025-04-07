@@ -4,9 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Concessionaire {
-    private List<Car> cars;
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
+    public void setVehicles(List<Vehicle> vehicles) {
+        this.vehicles = vehicles;
+    }
+
+    private List<Vehicle> vehicles;
 
     public Concessionaire() {
-        this.cars = new ArrayList<>();
+        this.vehicles = new ArrayList<>();
     }
 }
